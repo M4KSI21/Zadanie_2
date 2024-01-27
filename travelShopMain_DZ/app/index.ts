@@ -56,7 +56,6 @@ function initTourElemListener(tourWrap) {
     const targetItem = ev.target;
     const parentItem = targetItem?.parentNode;
     let realTarget;
-
     if (targetItem.hasAttribute('data-tour-item-index')) {
       realTarget = targetItem;
     } else if (parentItem && parentItem.hasAttribute('data-tour-item-index')) {
